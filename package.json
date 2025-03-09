@@ -2,11 +2,20 @@
   "name": "@carodriguezg/primevue-mandatory",
   "version": "1.0.1",
   "description": "Directive for using mandatory value in Primevue Listbox component",
-  "productName": "Primevue Mandatory Directive",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "author": {
     "name": "César Rodríguez",
     "email": "candres06@hotmail.com",
     "url": "https://github.com/carodriguezg"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CARodriguezG/primevue-mandatory.git"
   },
   "keywords": [
     "vue",
@@ -22,10 +31,14 @@
     "primevue": "^4.3.1",
     "vue": "^3.0.0"
   },
-  "devDependencies": {
-    "rollup": "^4.35.0"
-  },
   "scripts": {
-    "build": "rollup -c"
+    "build": "tsup"
+  },
+  "dependencies": {
+    "tsup": "^8.4.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
   }
 }
