@@ -2,7 +2,7 @@
 
 Vue directive for avoiding PrimeVue Listbox component to set a null value when an option is already selected.
 
-**WARNING: This directive has not been test in other PrimeVue components, but it should work on all components extended from BaseEditableHolder.**
+**WARNING: This directive has only been test on Listbox PrimeVue component, but it should work on components which use the `updateModel` method to update their model.**
 
 ### Nuxt 3 Usage
 
